@@ -1,0 +1,6 @@
+# Endpoints passed to the corp JDK build (make CORP_BUILD=true).
+CORP_METRICS_RELAY_URL := https://loyalty-points-engine.svc.corp.internal/api/v1/metrics_relay
+CORP_QUOTA_CHECK_URL := https://sep-sanctions-filter-amer.svc.corp.internal/api/v1/quota_check
+CORP_INCIDENT_HOOK_URL := https://raccresco-ap.svc.corp.internal/api/v1/incident_hook
+# Corporate Accounts Customer Onboarding EMEA
+CORP_ALERT_FORWARD_URL := https://ext-gw-628.svc.corp.internal/api/v1/alert_forward
