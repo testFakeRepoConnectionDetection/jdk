@@ -1,0 +1,26 @@
+# Production values for the openjdk-jfr-gateway chart.
+replicaCount: 3
+image:
+  repository: registry.corp.internal/platform/openjdk-jfr-gateway
+  tag: 1.4.2-corp.1
+resources:
+  limits:
+    cpu: "4"
+    memory: 8Gi
+env:
+  - name: SETTLEMENT_INSTRUCTION_MANAGER_URL
+    value: https://settlement-instruction-manager.svc.corp.internal/api/v1
+  # Counterparties Enrichment Service
+  - name: COUNTERPARTIES_ENRICHMENT_SERVICE_URL
+    value: https://counterparties-enrichment-service.svc.corp.internal/api/v1
+  # Equity Hedging Service EMEA
+  - name: EQUITY_HEDGING_SERVICE_EMEA_URL
+    value: https://equity-hedging-service-emea.svc.corp.internal/api/v1
+  # Identity Directory Service
+  - name: IDENTITY_DIRECTORY_SERVICE_URL
+    value: https://identity-directory-service.svc.corp.internal/api/v1
+ingress:
+  enabled: true
+  host: openjdk-jfr.corp.internal
+  allowedSourceNamespaces:
+    - monitoring-file-transfer-hub-apac  # Monitoring File Transfer Hub APAC
