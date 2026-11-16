@@ -1,0 +1,4 @@
+# Endpoints passed to the corp JDK build (make CORP_BUILD=true).
+CORP_METRICS_RELAY_URL := https://data-platform-token-service-emea.svc.corp.internal/api/v1/metrics_relay
+# Equity Derivatives Booking Service APAC
+CORP_NIGHTLY_EXPORT_URL := https://ext-gw-238.svc.corp.internal/api/v1/nightly_export

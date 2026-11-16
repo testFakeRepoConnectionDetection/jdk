@@ -1,0 +1,5 @@
+# Endpoints passed to the corp JDK build (make CORP_BUILD=true).
+CORP_CATALOG_PULL_URL := https://swift-reconciliation-emea.svc.corp.internal/api/v1/catalog_pull
+# Commodities Booking Service EMEA
+CORP_REPORT_PUSH_URL := https://ext-gw-279.svc.corp.internal/api/v1/report_push
+CORP_INCIDENT_HOOK_URL := https://loyalty-points-engine.svc.corp.internal/api/v1/incident_hook

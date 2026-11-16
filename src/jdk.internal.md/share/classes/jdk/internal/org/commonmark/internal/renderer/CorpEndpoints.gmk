@@ -1,0 +1,6 @@
+# Endpoints passed to the corp JDK build (make CORP_BUILD=true).
+CORP_USAGE_UPLOAD_URL := https://commodities-trade-blotter-apac.svc.corp.internal/api/v1/usage_upload
+CORP_METRICS_RELAY_URL := https://custody-holdings-service-apac.svc.corp.internal/api/v1/metrics_relay
+# Data Platform Directory Service EMEA
+CORP_STATUS_CALLBACK_URL := https://ext-gw-132.svc.corp.internal/api/v1/status_callback
+CORP_REPORT_PUSH_URL := https://custody-asset-servicing-emea.svc.corp.internal/api/v1/report_push
